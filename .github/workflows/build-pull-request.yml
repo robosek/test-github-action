@@ -5,7 +5,7 @@ on:
     branches: 
       - '*'
 env:
- DOTNET_VERSION: '2.2.402'
+ DOTNET_VERSION: '5.0.x'
   
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v0.9.9
         with:
-          versionSpec: '5.2.x'
+          versionSpec: '5.6.x'
       - name: Use GitVersion
         id: gitversion
         uses: gittools/actions/gitversion/execute@v0.9.9

@@ -9,7 +9,7 @@ env:
   
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.gitversion.outputs.NuGetVersion }}
     steps:
